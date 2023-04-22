@@ -1,0 +1,36 @@
+name: fAuth
+version: '${project.version}'
+main: com.fauth.FAuth
+api-version: 1.19
+authors: [feris]
+
+commands:
+    fauth:
+        description: fAuth admin commands
+        permission: fauth.admin
+        usage: /<command>
+        aliases:
+          - fa
+
+    login:
+        description: Login to the server
+        usage: /<command> <password>
+        aliases:
+          - l
+          - log
+
+    register:
+        description: Register a new account
+        usage: /<command> <password> <password>
+        aliases:
+          - reg
+          - regis
+          - r
+
+    changepassword:
+        description: Change your password
+        usage: /<command> <old password> <new password> <new password>
+        aliases:
+          - changepass
+          - changepw
+          - cpw
